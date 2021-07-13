@@ -39,7 +39,7 @@ app.add_middleware(
 @app.on_event("startup")
 async def load_model():
     logger.info("\tStart loading model ...")
-    model_path = "../ml_models/one-vs-rest-20210710-013647/model.pkl"
+    model_path = "./ml_models/one-vs-rest-20210710-013647/model.pkl"
     with open(model_path, "rb") as model_file:
         app.state.model = pickle.load(model_file)
     logger.info("\tModel loaded successfully")
