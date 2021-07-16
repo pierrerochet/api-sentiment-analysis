@@ -23,7 +23,8 @@ app = FastAPI(
 )
 
 origins = [
-    "http://localhost",
+    'https://www.pierrerochet.com'
+    # "http://localhost:3000",
     # "http://172.22.0.1",
     # 'http://ec2-15-236-60-229.eu-west-3.compute.amazonaws.com'
 ]
